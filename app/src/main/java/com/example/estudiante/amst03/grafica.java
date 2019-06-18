@@ -2,20 +2,19 @@ package com.example.estudiante.amst03;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.content.Intent;
+import android.view.View;
 
-
-public class MainActivity extends AppCompatActivity {
+public class grafica extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_grafica);
     }
 
-    public void a_grafica_lineal(View view){
-        Intent avanzar = new Intent(this, grafica.class);
-        startActivity(avanzar);
+    public void volver_menu(View view){
+        Intent volver = new Intent(this, MainActivity.class);
+        startActivity(volver);
     }
 }

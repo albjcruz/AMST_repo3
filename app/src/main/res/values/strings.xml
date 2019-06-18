@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AMST03</string>
+    <string name="graficaLineal">GRÁFICA LINEAL</string>
+    <string name="VolverAlMenu">VOLVER</string>
 </resources>
