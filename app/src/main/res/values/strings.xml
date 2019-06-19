@@ -2,4 +2,5 @@
     <string name="app_name">AMST03</string>
     <string name="graficaLineal">GRÁFICA LINEAL</string>
     <string name="VolverAlMenu">VOLVER</string>
+    <string name="irAGrafica">OK</string>
 </resources>
