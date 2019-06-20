@@ -36,4 +36,24 @@ public class Main2Activity extends AppCompatActivity {
             }
         }, 0);
     }
+
+    public void AbrirVideo(View view) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent= new Intent(Main2Activity.this, activity_youtube.class);
+                startActivity(intent);
+            }
+        }, 0);
+    }
+
+    public void AbrirMenuFlotante(View view) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent= new Intent(Main2Activity.this, MainFloat.class);
+                startActivity(intent);
+            }
+        }, 0);
+    }
 }
