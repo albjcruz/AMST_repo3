@@ -7,6 +7,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.estudiante.amst03.Calendar.CalendarActivity;
+
 public class Main2Activity extends AppCompatActivity {
 
     @Override
@@ -29,7 +31,7 @@ public class Main2Activity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent= new Intent(Main2Activity.this,CalendarActivity.class);
+                Intent intent= new Intent(Main2Activity.this, CalendarActivity.class);
                 startActivity(intent);
             }
         }, 0);
