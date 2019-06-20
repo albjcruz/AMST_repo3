@@ -4,6 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainFloat">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:onClick="RegresarAlMenu"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imap"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imcalendar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="AbrirCalendario"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imyout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/imyout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:onClick="AbrirVideo"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toTopOf="@+id/imap"
+        app:layout_constraintEnd_toStartOf="@+id/imcalendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/youtube" />
+
+    <ImageView
+        android:id="@+id/imap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="13dp"
+        android:onClick="AbrirMap"
+        android:layout_marginBottom="169dp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton2"
+        app:layout_constraintEnd_toStartOf="@+id/imgraph"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imyout"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/imgraph"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Graph"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imap"
+        app:layout_constraintTop_toBottomOf="@+id/imcalendar"
+        app:srcCompat="@drawable/graph" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
