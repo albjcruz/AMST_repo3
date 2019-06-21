@@ -11,28 +11,26 @@
         android:id="@+id/floatingActionButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="13dp"
         android:clickable="true"
         android:onClick="RegresarAlMenu"
         app:backgroundTint="#FF9800"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imap"
+        app:layout_constraintStart_toStartOf="@+id/imgraph"
+        app:layout_constraintTop_toBottomOf="@+id/imgraph"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <ImageView
         android:id="@+id/imcalendar"
-        android:layout_width="0dp"
+        android:layout_width="258dp"
         android:layout_height="0dp"
-        android:layout_marginTop="171dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="6dp"
         android:onClick="AbrirCalendario"
-        android:layout_marginBottom="57dp"
-        app:layout_constraintBottom_toTopOf="@+id/imgraph"
+        app:layout_constraintBottom_toTopOf="@+id/imap"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imyout"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/calendar" />
 
     <ImageView
@@ -41,11 +39,11 @@
         android:layout_height="0dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="6dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="20dp"
         android:onClick="AbrirVideo"
-        android:layout_marginBottom="110dp"
-        app:layout_constraintBottom_toTopOf="@+id/imap"
-        app:layout_constraintEnd_toStartOf="@+id/imcalendar"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/imap"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/youtube" />
@@ -55,25 +53,71 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="2dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginEnd="3dp"
         android:onClick="AbrirMap"
-        android:layout_marginBottom="169dp"
-        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton2"
-        app:layout_constraintEnd_toStartOf="@+id/imgraph"
+        app:layout_constraintBottom_toTopOf="@+id/imgraph"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imyout"
+        app:layout_constraintTop_toBottomOf="@+id/imcalendar"
         app:srcCompat="@drawable/map" />
 
     <ImageView
         android:id="@+id/imgraph"
-        android:layout_width="0dp"
+        android:layout_width="242dp"
         android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="75dp"
         android:text="Graph"
-        android:layout_marginBottom="156dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imap"
-        app:layout_constraintTop_toBottomOf="@+id/imcalendar"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@drawable/graph" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="176dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="80dp"
+        android:text="VideoView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imcalendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginBottom="209dp"
+        android:text="Calendar"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgraph"
+        app:layout_constraintStart_toStartOf="@+id/imyout"
+        app:layout_constraintTop_toBottomOf="@+id/imyout" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="46dp"
+        android:text="Map"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/imcalendar"
+        app:layout_constraintTop_toTopOf="@+id/imap" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:text="Graph"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imap" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
