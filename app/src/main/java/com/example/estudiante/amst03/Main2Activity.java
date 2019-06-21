@@ -56,4 +56,13 @@ public class Main2Activity extends AppCompatActivity {
             }
         }, 0);
     }
+    public void irDatos(View view) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent= new Intent(Main2Activity.this, datos.class);
+                startActivity(intent);
+            }
+        }, 0);
+    }
 }

@@ -18,7 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainFloat"></activity>
+        <activity android:name=".grafica"></activity>
+        <activity android:name=".datos" />
+        <activity android:name=".MainFloat" />
         <activity android:name=".activity_youtube" />
         <activity android:name=".Main2Activity">
             <intent-filter>
