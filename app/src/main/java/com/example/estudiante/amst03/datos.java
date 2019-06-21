@@ -60,7 +60,5 @@ public class datos extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }
